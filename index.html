@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wireframe Toko Online - TokoKita</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- 1. Top bar -->
+    <div class="topbar">
+      <div class="container topbar-wrapper">
+        <span class="badge">1</span>
+        <span>Gratis ongkir min. belanja Rp 100.000</span>
+        <span class="topbar-links">Lacak Pesanan | Bantuan</span>
+      </div>
+    </div>
+
+    <!-- 2-4. Header -->
+    <header>
+      <div class="container header-wrapper">
+        <div class="brand">
+          <span class="badge">2</span>
+          <label for="menu-toggle" class="hamburger" aria-label="Buka menu">&#9776;</label>
+          <div class="logo-placeholder">LOGO</div>
+          <h1>TokoKita</h1>
+        </div>
+        <form class="search" role="search" onsubmit="return false">
+          <span class="badge">3</span>
+          <input type="text" placeholder="Cari produk, merek, kategori..." />
+          <button type="button">Cari</button>
+        </form>
+        <div class="header-actions">
+          <span class="badge">4</span>
+          <a href="#" class="action">Akun</a>
+          <a href="#" class="action">Wishlist</a>
+          <a href="#" class="action">Keranjang <span class="cart-count">3</span></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- 5. Navigasi -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <nav>
+      <span class="badge">5</span>
+      <div class="container nav-wrapper">
+        <a href="#beranda">Beranda</a>
+        <a href="#kategori">Kategori</a>
+        <a href="#produk">Produk</a>
+        <a href="#promo">Promo</a>
+        <a href="#kontak">Bantuan</a>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="container main-layout">
+      <!-- 6. Sidebar kategori -->
+      <aside class="sidebar">
+        <span class="badge">6</span>
+        <h3>Kategori</h3>
+        <a href="#">Fashion Pria</a>
+        <a href="#">Fashion Wanita</a>
+        <a href="#">Elektronik</a>
+        <a href="#">Aksesoris</a>
+        <a href="#">Rumah Tangga</a>
+        <a href="#">Olahraga</a>
+      </aside>
+
+      <section class="content">
+        <!-- 7. Hero -->
+        <section id="beranda" class="hero">
+          <span class="badge">7</span>
+          <div class="hero-text">
+            <p class="label">PROMO MINGGU INI</p>
+            <h2>Diskon hingga 50% untuk Produk Pilihan</h2>
+            <p>Belanja kebutuhan harian dengan harga terbaik dan pengiriman cepat.</p>
+            <button>Belanja Sekarang</button>
+          </div>
+          <div class="hero-image">BANNER</div>
+        </section>
+
+        <!-- 8. Kategori pilihan -->
+        <section id="kategori" class="kategori">
+          <span class="badge">8</span>
+          <div class="section-title"><h2>Kategori Pilihan</h2><a href="#">Lihat Semua</a></div>
+          <div class="kategori-grid">
+            <div class="kategori-item"><div class="icon">ICON</div>Fashion</div>
+            <div class="kategori-item"><div class="icon">ICON</div>Elektronik</div>
+            <div class="kategori-item"><div class="icon">ICON</div>Aksesoris</div>
+            <div class="kategori-item"><div class="icon">ICON</div>Rumah</div>
+            <div class="kategori-item"><div class="icon">ICON</div>Olahraga</div>
+            <div class="kategori-item"><div class="icon">ICON</div>Lainnya</div>
+          </div>
+        </section>
+
+        <!-- 9. Produk unggulan -->
+        <section id="produk" class="produk">
+          <span class="badge">9</span>
+          <div class="section-title"><h2>Produk Unggulan</h2><a href="#">Lihat Semua</a></div>
+          <div class="card-grid">
+            <article class="card product">
+              <div class="card-image">IMAGE</div>
+              <h3>Sepatu Sneakers Pria</h3>
+              <p class="price">Rp 349.000</p>
+              <p class="rating">&#9733; 4.8</p>
+              <button class="btn-small">+ Keranjang</button>
+            </article>
+            <article class="card product">
+              <div class="card-image">IMAGE</div>
+              <h3>Tas Ransel Kasual</h3>
+              <p class="price">Rp 189.000</p>
+              <p class="rating">&#9733; 4.7</p>
+              <button class="btn-small">+ Keranjang</button>
+            </article>
+            <article class="card product">
+              <div class="card-image">IMAGE</div>
+              <h3>Headphone Nirkabel</h3>
+              <p class="price">Rp 459.000</p>
+              <p class="rating">&#9733; 4.6</p>
+              <button class="btn-small">+ Keranjang</button>
+            </article>
+            <article class="card product">
+              <div class="card-image">IMAGE</div>
+              <h3>Jam Tangan Digital</h3>
+              <p class="price">Rp 275.000</p>
+              <p class="rating">&#9733; 4.9</p>
+              <button class="btn-small">+ Keranjang</button>
+            </article>
+            <article class="card product">
+              <div class="card-image">IMAGE</div>
+              <h3>Kaos Polos Katun</h3>
+              <p class="price">Rp 79.000</p>
+              <p class="rating">&#9733; 4.5</p>
+              <button class="btn-small">+ Keranjang</button>
+            </article>
+            <article class="card product">
+              <div class="card-image">IMAGE</div>
+              <h3>Botol Minum Stainless</h3>
+              <p class="price">Rp 95.000</p>
+              <p class="rating">&#9733; 4.8</p>
+              <button class="btn-small">+ Keranjang</button>
+            </article>
+            <article class="card product">
+              <div class="card-image">IMAGE</div>
+              <h3>Kacamata Hitam</h3>
+              <p class="price">Rp 120.000</p>
+              <p class="rating">&#9733; 4.4</p>
+              <button class="btn-small">+ Keranjang</button>
+            </article>
+            <article class="card product">
+              <div class="card-image">IMAGE</div>
+              <h3>Dompet Kulit</h3>
+              <p class="price">Rp 150.000</p>
+              <p class="rating">&#9733; 4.7</p>
+              <button class="btn-small">+ Keranjang</button>
+            </article>
+          </div>
+        </section>
+
+        <!-- 10. Banner promo -->
+        <section id="promo" class="promo">
+          <span class="badge">10</span>
+          <div>
+            <p class="label">FLASH SALE</p>
+            <h2>Berakhir dalam 02:15:40</h2>
+          </div>
+          <button>Lihat Penawaran</button>
+        </section>
+
+        <!-- 11. Keunggulan -->
+        <section class="keunggulan">
+          <span class="badge">11</span>
+          <div class="keunggulan-grid">
+            <div class="keunggulan-item"><strong>Pengiriman Cepat</strong><p>Ke seluruh Indonesia</p></div>
+            <div class="keunggulan-item"><strong>Pembayaran Aman</strong><p>Transfer, e-wallet, COD</p></div>
+            <div class="keunggulan-item"><strong>Garansi Retur</strong><p>7 hari pengembalian</p></div>
+            <div class="keunggulan-item"><strong>Layanan 24/7</strong><p>Chat dan telepon</p></div>
+          </div>
+        </section>
+
+        <!-- 12. Newsletter -->
+        <section class="newsletter">
+          <span class="badge">12</span>
+          <div>
+            <h2>Dapatkan Info Promo Terbaru</h2>
+            <p>Masukkan email Anda untuk menerima penawaran eksklusif.</p>
+          </div>
+          <form onsubmit="return false">
+            <input type="email" placeholder="Alamat email" />
+            <button type="button">Berlangganan</button>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <!-- 13. Footer -->
+    <footer id="kontak">
+      <span class="badge">13</span>
+      <div class="container footer-wrapper">
+        <div><strong>TokoKita</strong><p>Belanja mudah, harga terjangkau.</p></div>
+        <div><strong>Bantuan</strong><p>Cara Belanja<br />Pengiriman<br />Retur &amp; Refund</p></div>
+        <div><strong>Perusahaan</strong><p>Tentang Kami<br />Karier<br />Kebijakan Privasi</p></div>
+        <div><strong>Kontak</strong><p>cs@tokokita.id<br />0800-1234-5678</p></div>
+        <div><strong>Pembayaran</strong><div class="pay">BANK | E-WALLET | COD</div></div>
+      </div>
+    </footer>
+
+    <!-- 14. Bottom nav (mobile) -->
+    <div class="bottom-nav">
+      <span class="badge">14</span>
+      <a href="#beranda">Beranda</a>
+      <a href="#kategori">Kategori</a>
+      <a href="#">Keranjang</a>
+      <a href="#">Akun</a>
+    </div>
+
+    <!-- ANOTASI -->
+    <section class="annotation">
+      <div class="container">
+        <h2>Anotasi Fungsi Area Wireframe</h2>
+        <p>Nomor di sudut setiap area merujuk ke tabel berikut. Kolom terakhir menjelaskan perubahan perilaku area pada tampilan mobile.</p>
+        <div class="table-wrap">
+        <table>
+          <thead><tr><th>No</th><th>Area</th><th>Fungsi</th><th>Perilaku di Mobile</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Top bar</td><td>Menampilkan informasi singkat (gratis ongkir) dan tautan cepat Lacak Pesanan serta Bantuan.</td><td>Tautan kanan disembunyikan, hanya pesan promo.</td></tr>
+            <tr><td>2</td><td>Logo &amp; nama toko</td><td>Identitas merek; klik kembali ke beranda.</td><td>Ditambah tombol hamburger untuk membuka menu.</td></tr>
+            <tr><td>3</td><td>Kolom pencarian</td><td>Pengguna mencari produk berdasarkan kata kunci, merek, atau kategori.</td><td>Pindah ke baris sendiri dengan lebar penuh.</td></tr>
+            <tr><td>4</td><td>Akun, Wishlist, Keranjang</td><td>Akses login/profil, daftar favorit, dan keranjang dengan penanda jumlah item.</td><td>Ikon diringkas; akses utama pindah ke bottom nav.</td></tr>
+            <tr><td>5</td><td>Navigasi utama</td><td>Menu tingkat atas: Beranda, Kategori, Produk, Promo, Bantuan.</td><td>Tersembunyi, muncul vertikal saat hamburger ditekan.</td></tr>
+            <tr><td>6</td><td>Sidebar kategori</td><td>Pintasan menyaring produk per kategori.</td><td>Berubah jadi deretan tombol kategori di atas konten.</td></tr>
+            <tr><td>7</td><td>Hero banner</td><td>Menampilkan promo utama dan tombol ajakan bertindak (CTA) Belanja Sekarang.</td><td>Susunan teks dan gambar menjadi satu kolom.</td></tr>
+            <tr><td>8</td><td>Kategori pilihan</td><td>Jalan pintas visual ke kategori terpopuler.</td><td>Grid 6 kolom menjadi 3 kolom.</td></tr>
+            <tr><td>9</td><td>Produk unggulan</td><td>Kartu produk berisi foto, nama, harga, rating, dan tombol tambah ke keranjang.</td><td>Grid 4 kolom menjadi 2 kolom.</td></tr>
+            <tr><td>10</td><td>Banner flash sale</td><td>Mendorong urgensi pembelian lewat hitung mundur promo.</td><td>Teks dan tombol ditumpuk vertikal.</td></tr>
+            <tr><td>11</td><td>Keunggulan toko</td><td>Membangun kepercayaan: pengiriman, pembayaran aman, retur, layanan.</td><td>Grid 4 kolom menjadi 2 kolom.</td></tr>
+            <tr><td>12</td><td>Newsletter</td><td>Mengumpulkan email pelanggan untuk promosi berikutnya.</td><td>Input dan tombol ditumpuk vertikal.</td></tr>
+            <tr><td>13</td><td>Footer</td><td>Tautan bantuan, informasi perusahaan, kontak, dan metode pembayaran.</td><td>Kolom ditumpuk menjadi satu.</td></tr>
+            <tr><td>14</td><td>Bottom nav (khusus mobile)</td><td>Navigasi utama yang mudah dijangkau ibu jari: Beranda, Kategori, Keranjang, Akun.</td><td>Hanya tampil di layar kecil, menempel di bawah layar.</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
