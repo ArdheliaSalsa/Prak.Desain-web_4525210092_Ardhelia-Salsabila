@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Mahasiswa — Akademik</title>
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+  </head>
+  <body>
+    <!-- Ikon SVG (sprite) -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></symbol>
+      <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+      <symbol id="i-clipboard" viewBox="0 0 24 24"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/></symbol>
+      <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></symbol>
+      <symbol id="i-card" viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></symbol>
+      <symbol id="i-sliders" viewBox="0 0 24 24"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+      <symbol id="i-bell" viewBox="0 0 24 24"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></symbol>
+      <symbol id="i-logout" viewBox="0 0 24 24"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></symbol>
+    </svg>
+
+    <div class="app">
+      <!-- ================= SIDEBAR / BOTTOM NAV ================= -->
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-logo" aria-hidden="true">A</div>
+          <div class="brand-text">
+            <span class="brand-name">Akademik</span>
+            <span class="brand-sub">Portal Mahasiswa</span>
+          </div>
+        </div>
+
+        <nav class="menu" aria-label="Menu utama">
+          <a href="#" aria-current="page"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg><span>Dashboard</span></a>
+          <a href="#"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg><span>Jadwal</span></a>
+          <a href="#"><svg class="icon" aria-hidden="true"><use href="#i-clipboard"/></svg><span>KRS</span></a>
+          <a href="#"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg><span>Studi</span></a>
+          <a href="#"><svg class="icon" aria-hidden="true"><use href="#i-card"/></svg><span>Keuangan</span></a>
+          <a href="#"><svg class="icon" aria-hidden="true"><use href="#i-sliders"/></svg><span>Pengaturan</span></a>
+        </nav>
+
+        <div class="sidebar-foot">
+          <button class="btn btn--ghost" type="button"><svg class="icon" aria-hidden="true"><use href="#i-logout"/></svg><span>Keluar</span></button>
+        </div>
+      </aside>
+
+      <!-- ================= MAIN ================= -->
+      <main class="main">
+        <header class="topbar">
+          <div class="topbar-title">
+            <p class="eyebrow">Dashboard</p>
+            <h1 class="h1">Selamat datang, Windah</h1>
+          </div>
+
+          <div class="field topbar-search">
+            <label class="sr-only" for="cari">Cari mata kuliah atau dosen</label>
+            <div class="input-icon">
+              <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+              <input class="input" id="cari" type="search" placeholder="Cari mata kuliah atau dosen" />
+            </div>
+          </div>
+
+          <button class="btn btn--icon" type="button" aria-label="Notifikasi (2 baru)">
+            <svg class="icon" aria-hidden="true"><use href="#i-bell"/></svg><span class="dot"></span>
+          </button>
+
+          <a class="profile" href="#" aria-label="Profil Windah Basudara">
+            <img src="images/profile.jpg" alt="Foto profil Windah Basudara" />
+            <div><strong>Windah Basudara</strong><span>Mahasiswa</span></div>
+          </a>
+        </header>
+
+        <div class="quick-actions">
+          <a class="btn btn--primary" href="#"><svg class="icon" aria-hidden="true"><use href="#i-clipboard"/></svg>Isi KRS</a>
+          <a class="btn btn--secondary" href="#"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg>Unduh KHS</a>
+          <a class="btn btn--ghost" href="#">Hubungi Dosen PA</a>
+        </div>
+
+        <!-- ================= STATISTIK ================= -->
+        <section class="stat-grid" aria-label="Ringkasan akademik">
+          <article class="card card--stat card--interactive">
+            <div class="stat-top"><span class="stat-label">IPK</span>
+              <span class="stat-icon stat-icon--success"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg></span></div>
+            <strong class="stat-value">3.78</strong>
+            <span><span class="badge badge--success">Sangat Baik</span></span>
+          </article>
+
+          <article class="card card--stat card--interactive">
+            <div class="stat-top"><span class="stat-label">SKS Ditempuh</span>
+              <span class="stat-icon"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span></div>
+            <strong class="stat-value">88</strong>
+            <div class="progress" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="144" aria-label="SKS ditempuh"><span style="width:61%"></span></div>
+            <span class="stat-note">dari 144 SKS</span>
+          </article>
+
+          <article class="card card--stat card--interactive">
+            <div class="stat-top"><span class="stat-label">Mata Kuliah</span>
+              <span class="stat-icon stat-icon--accent"><svg class="icon" aria-hidden="true"><use href="#i-clipboard"/></svg></span></div>
+            <strong class="stat-value">7</strong>
+            <span class="stat-note">Semester berjalan</span>
+          </article>
+
+          <article class="card card--stat card--interactive">
+            <div class="stat-top"><span class="stat-label">Status</span>
+              <span class="stat-icon stat-icon--info"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span></div>
+            <strong class="stat-value">Aktif</strong>
+            <span><span class="badge badge--success">Terdaftar</span></span>
+          </article>
+        </section>
+
+        <!-- ================= JADWAL & PENGUMUMAN ================= -->
+        <div class="content-grid">
+          <section class="card" aria-labelledby="jadwal-judul">
+            <div class="card-head">
+              <div>
+                <p class="eyebrow">Perkuliahan</p>
+                <h2 class="h2" id="jadwal-judul">Jadwal Hari Ini</h2>
+              </div>
+              <a class="btn btn--outline btn--sm" href="#">Lihat Semua</a>
+            </div>
+            <ul class="schedule">
+              <li>
+                <div class="time"><strong>08:00</strong><span>09:40</span></div>
+                <div><h3 class="h4">Desain Web</h3><p>Ruang Lab Komputer 1</p></div>
+                <span class="badge badge--success">Selesai</span>
+              </li>
+              <li>
+                <div class="time"><strong>10:00</strong><span>11:40</span></div>
+                <div><h3 class="h4">Basis Data</h3><p>Ruang 204</p></div>
+                <span class="badge badge--info">Berlangsung</span>
+              </li>
+              <li>
+                <div class="time"><strong>13:00</strong><span>14:40</span></div>
+                <div><h3 class="h4">Pemrograman Web</h3><p>Laboratorium Komputer 2</p></div>
+                <span class="badge badge--neutral">Berikutnya</span>
+              </li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="info-judul">
+            <div class="card">
+              <div class="card-head">
+                <div>
+                  <p class="eyebrow">Informasi</p>
+                  <h2 class="h2" id="info-judul">Pengumuman</h2>
+                </div>
+              </div>
+              <div class="notice-list">
+                <article class="card card--notice is-warning">
+                  <span class="badge badge--warning">Penting</span>
+                  <h3 class="h4">Pengisian KRS</h3>
+                  <p>Pengisian KRS semester berikutnya dibuka pada 24 Agustus 2026.</p>
+                </article>
+                <article class="card card--notice is-info">
+                  <span class="badge badge--info">Informasi</span>
+                  <h3 class="h4">Seminar Akademik</h3>
+                  <p>Seminar akademik akan dilaksanakan di auditorium universitas.</p>
+                </article>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ================= TABEL ================= -->
+        <section class="card" aria-labelledby="mk-judul">
+          <div class="card-head">
+            <div>
+              <p class="eyebrow">Akademik</p>
+              <h2 class="h2" id="mk-judul">Mata Kuliah Semester Ini</h2>
+            </div>
+            <div class="table-tools">
+              <label class="sr-only" for="filter-status">Filter status</label>
+              <select class="select" id="filter-status">
+                <option>Semua status</option>
+                <option>Aktif</option>
+                <option>Selesai</option>
+              </select>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr><th scope="col">Mata Kuliah</th><th scope="col">SKS</th><th scope="col">Dosen</th><th scope="col">Status</th></tr>
+              </thead>
+              <tbody>
+                <tr><td data-label="Mata Kuliah">Desain Web</td><td data-label="SKS">3</td><td data-label="Dosen">Crispy cendy</td><td data-label="Status"><span class="badge badge--success">Aktif</span></td></tr>
+                <tr><td data-label="Mata Kuliah">Basis Data</td><td data-label="SKS">3</td><td data-label="Dosen">Ilham</td><td data-label="Status"><span class="badge badge--success">Aktif</span></td></tr>
+                <tr><td data-label="Mata Kuliah">Pemrograman Web</td><td data-label="SKS">3</td><td data-label="Dosen">Josep</td><td data-label="Status"><span class="badge badge--success">Aktif</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+/* ==================================================
+   DESIGN TOKENS — Simple Design System "Akademik UI"
+   Semua nilai warna, tipografi, jarak, radius, dan
+   bayangan didefinisikan di sini SATU KALI saja.
+   File lain hanya boleh memakai var(--...).
+================================================== */
+
+/* ---------- Font (disimpan lokal di /fonts) ---------- */
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 400; font-style: normal; font-display: swap;
+  src: url("../fonts/plus-jakarta-sans-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 500; font-style: normal; font-display: swap;
+  src: url("../fonts/plus-jakarta-sans-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 600; font-style: normal; font-display: swap;
+  src: url("../fonts/plus-jakarta-sans-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 700; font-style: normal; font-display: swap;
+  src: url("../fonts/plus-jakarta-sans-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Plus Jakarta Sans"; font-weight: 800; font-style: normal; font-display: swap;
+  src: url("../fonts/plus-jakarta-sans-latin-800-normal.woff2") format("woff2"); }
+
+:root {
+  /* ---------- 1. COLOR PALETTE ---------- */
+  /* Primary (biru) — warna aksi utama & identitas */
+  --primary-50:  #eef2ff;
+  --primary-100: #dde5ff;
+  --primary-200: #b9c8fb;
+  --primary-500: #3454d1;   /* default */
+  --primary-600: #2a44b0;   /* hover */
+  --primary-700: #213689;   /* active / pressed */
+
+  /* Accent (koral) — penekanan, error/bahaya */
+  --accent-50:  #fdeceb;
+  --accent-500: #e5605a;
+  --accent-700: #b9342e;
+
+  /* Neutral — teks, garis, latar */
+  --neutral-0:   #ffffff;
+  --neutral-50:  #f6f7fb;
+  --neutral-100: #edeff5;
+  --neutral-200: #e1e5ed;
+  --neutral-300: #c8cedb;
+  --neutral-400: #9aa2b4;
+  --neutral-500: #5b6478;
+  --neutral-700: #343b4d;
+  --neutral-900: #171c2b;
+  --navy-900:    #172033;   /* sidebar */
+
+  /* Semantic */
+  --success:       #1e7a33;
+  --success-bg:    #e6f5ea;
+  --warning:       #8a5a00;
+  --warning-bg:    #fff4d6;
+  --info:          #1f5a99;
+  --info-bg:       #e7f1fd;
+  --danger:        #c23b35;
+  --danger-bg:     #fdeceb;
+
+  /* Alias peran (dipakai komponen) */
+  --bg:             var(--neutral-50);
+  --surface:        var(--neutral-0);
+  --border:         var(--neutral-200);
+  --border-strong:  var(--neutral-300);
+  --text:           var(--neutral-900);
+  --text-muted:     var(--neutral-500);
+  --text-on-primary:#ffffff;
+  --focus-ring:     0 0 0 3px rgba(52, 84, 209, 0.35);
+
+  /* ---------- 2. TYPE SCALE ---------- */
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+  --fs-h1: 2rem;      /* 32px */  --lh-h1: 2.5rem;
+  --fs-h2: 1.5rem;    /* 24px */  --lh-h2: 2rem;
+  --fs-h3: 1.125rem;  /* 18px */  --lh-h3: 1.625rem;
+  --fs-h4: 1rem;      /* 16px */  --lh-h4: 1.5rem;
+  --fs-body: 0.9375rem; /* 15px */ --lh-body: 1.5rem;
+  --fs-small: 0.8125rem; /* 13px */ --lh-small: 1.25rem;
+  --fs-caption: 0.75rem; /* 12px */ --lh-caption: 1rem;
+  --fs-stat: 2rem;    /* angka besar pada kartu statistik */
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+  /* ---------- 3. SPACING (kelipatan 4px) ---------- */
+  --space-xs:  4px;
+  --space-s:   8px;
+  --space-m:   16px;
+  --space-l:   24px;
+  --space-xl:  32px;
+  --space-xxl: 48px;
+
+  /* ---------- Radius & shadow ---------- */
+  --radius-s: 8px;
+  --radius-m: 12px;
+  --radius-l: 16px;
+  --radius-full: 999px;
+
+  --shadow-s: 0 1px 2px rgba(23, 28, 43, 0.06);
+  --shadow-m: 0 6px 20px rgba(23, 28, 43, 0.07);
+  --shadow-l: 0 14px 34px rgba(23, 28, 43, 0.12);
+
+  /* Ukuran kontrol (tinggi minimum sentuh 44px) */
+  --control-h: 44px;
+  --control-h-sm: 36px;
+}

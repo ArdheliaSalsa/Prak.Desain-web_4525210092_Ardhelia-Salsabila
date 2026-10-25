@@ -1,0 +1,72 @@
+/* Gaya khusus halaman dokumentasi Design System */
+.ds-nav { position: sticky; top: 0; z-index: 10; background: rgba(255,255,255,.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
+.ds-nav-inner { max-width: 1120px; margin: 0 auto; padding: 0 var(--space-l); display: flex; align-items: center; gap: var(--space-l); min-height: 60px; overflow-x: auto; }
+.ds-nav .brand-logo { width: 34px; height: 34px; font-size: 1rem; flex: none; }
+.ds-nav strong { white-space: nowrap; margin-right: auto; display: flex; align-items: center; gap: 10px; }
+.ds-nav a.link { color: var(--text-muted); text-decoration: none; font-weight: var(--fw-semibold); font-size: var(--fs-small); white-space: nowrap; padding: 6px 2px; border-bottom: 2px solid transparent; }
+.ds-nav a.link:hover { color: var(--primary-500); border-bottom-color: var(--primary-500); }
+
+.ds-wrap { max-width: 1120px; margin: 0 auto; padding: var(--space-xl) var(--space-l) var(--space-xxl); }
+.ds-hero { padding: var(--space-xxl) 0 var(--space-l); }
+.ds-hero .h1 { font-size: 2.5rem; line-height: 3rem; margin-bottom: var(--space-s); }
+.ds-hero p { max-width: 60ch; color: var(--text-muted); }
+
+.ds-section { padding: var(--space-xl) 0; border-top: 1px solid var(--border); scroll-margin-top: 70px; }
+.ds-section > .h2 { margin-bottom: var(--space-xs); }
+.ds-section > .lead { color: var(--text-muted); margin-bottom: var(--space-l); max-width: 70ch; }
+.ds-sub { font-size: var(--fs-caption); letter-spacing: .08em; text-transform: uppercase; font-weight: var(--fw-bold); color: var(--text-muted); margin: var(--space-l) 0 var(--space-s); }
+
+/* Colors */
+.swatch-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: var(--space-s); }
+.swatch { border: 1px solid var(--border); border-radius: var(--radius-m); overflow: hidden; background: var(--surface); }
+.swatch i { display: block; height: 64px; }
+.swatch div { padding: 10px 12px; font-size: var(--fs-caption); line-height: 1.4; }
+.swatch b { display: block; font-size: var(--fs-small); }
+.swatch code, .code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.75rem; color: var(--text-muted); }
+
+/* Type scale */
+.type-table { width: 100%; border-collapse: collapse; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-m); overflow: hidden; }
+.type-table td { padding: var(--space-m) var(--space-l); border-bottom: 1px solid var(--border); vertical-align: middle; }
+.type-table tr:last-child td { border-bottom: 0; }
+.type-table td:first-child { width: 190px; }
+.type-table .sample { margin: 0; }
+
+/* Spacing */
+.space-list { display: flex; flex-direction: column; gap: var(--space-s); background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-m); padding: var(--space-l); }
+.space-row { display: grid; grid-template-columns: 140px 70px 1fr; align-items: center; gap: var(--space-m); }
+.space-row .bar { height: 16px; background: var(--primary-500); border-radius: 4px; }
+
+/* Showcase boxes */
+.demo { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-m); padding: var(--space-l); }
+.demo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-l); }
+.btn-matrix { display: grid; grid-template-columns: 110px repeat(4, minmax(0, 1fr)); gap: var(--space-m) var(--space-s); align-items: center; }
+.btn-matrix .col { font-size: var(--fs-caption); font-weight: var(--fw-bold); letter-spacing: .08em; text-transform: uppercase; color: var(--text-muted); }
+.btn-matrix .row { font-size: var(--fs-small); font-weight: var(--fw-semibold); }
+.btn-row { display: flex; flex-wrap: wrap; gap: var(--space-s); align-items: center; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: var(--space-m); }
+.rules { margin: 0; padding-left: 1.2em; color: var(--text-muted); }
+.rules li { margin-bottom: 4px; }
+
+/* Paksa tampilan state untuk dokumentasi */
+.btn--primary.is-hover { background: var(--primary-600); }
+.btn--primary.is-active { background: var(--primary-700); }
+.btn--secondary.is-hover { background: var(--primary-100); }
+.btn--secondary.is-active { background: var(--primary-200); }
+.btn--outline.is-hover { background: var(--primary-50); }
+.btn--outline.is-active { background: var(--primary-100); }
+.btn--ghost.is-hover { background: var(--neutral-100); }
+.btn--ghost.is-active { background: var(--neutral-200); }
+.btn.is-focus { box-shadow: var(--focus-ring); }
+.input.is-focus { border-color: var(--primary-500); box-shadow: var(--focus-ring); }
+
+@media (max-width: 760px) {
+  .ds-hero .h1 { font-size: 1.75rem; line-height: 2.25rem; }
+  .btn-matrix { grid-template-columns: 1fr 1fr; }
+  .btn-matrix .col, .btn-matrix .row { grid-column: 1 / -1; }
+  .type-table td { display: block; width: 100% !important; padding: var(--space-s) var(--space-m); border: 0; }
+  .type-table tr { display: block; border-bottom: 1px solid var(--border); padding: var(--space-s) 0; }
+  .space-row { grid-template-columns: 1fr 50px; }
+  .space-row .bar { grid-column: 1 / -1; }
+}
+
+.ds-nav .brand-logo { display: grid; place-items: center; border-radius: var(--radius-s); background: var(--primary-500); color: #fff; font-weight: var(--fw-extrabold); }

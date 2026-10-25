@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Design System — Akademik UI</title>
+<link rel="stylesheet" href="css/tokens.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/docs.css" />
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></symbol>
+</svg>
+
+<header class="ds-nav">
+  <div class="ds-nav-inner">
+    <strong><span class="brand-logo" aria-hidden="true">A</span> Akademik UI</strong>
+    <nav aria-label="Bagian design system" style="display:flex;gap:24px">
+      <a class="link" href="#warna">Color</a><a class="link" href="#tipografi">Typography</a><a class="link" href="#spacing">Spacing</a>
+      <a class="link" href="#tombol">Buttons</a><a class="link" href="#form">Form Controls</a><a class="link" href="#kartu">Cards</a>
+    </nav>
+  </div>
+</header>
+
+<main class="ds-wrap">
+  <section class="ds-hero">
+    <p class="eyebrow">Simple Design System · v1.0</p>
+    <h1 class="h1">Akademik UI</h1>
+    <p>Kumpulan aturan visual sederhana untuk Portal Mahasiswa: warna, tipografi, jarak, tombol, form, dan kartu. Semua nilai disimpan sebagai <span class="code">CSS variable</span> di <span class="code">css/tokens.css</span> sehingga satu perubahan langsung berlaku di seluruh halaman.</p>
+  </section>
+
+  <section class="ds-section" id="warna">
+    <h2 class="h2">1. Color</h2>
+    <p class="lead">Satu warna utama (biru) untuk aksi, satu aksen (koral) untuk penekanan, skala netral untuk teks dan garis, serta empat warna semantik untuk status.</p>
+    <p class="ds-sub">Primary</p><div class="swatch-row"><div class="swatch"><i style="background:var(--primary-50)"></i><div><b>Primary 50</b><code>#EEF2FF</code><br><code>--primary-50</code></div></div><div class="swatch"><i style="background:var(--primary-100)"></i><div><b>Primary 100</b><code>#DDE5FF</code><br><code>--primary-100</code></div></div><div class="swatch"><i style="background:var(--primary-200)"></i><div><b>Primary 200</b><code>#B9C8FB</code><br><code>--primary-200</code></div></div><div class="swatch"><i style="background:var(--primary-500)"></i><div><b>Primary 500</b><code>#3454D1</code><br><code>--primary-500</code></div></div><div class="swatch"><i style="background:var(--primary-600)"></i><div><b>Primary 600</b><code>#2A44B0</code><br><code>--primary-600</code></div></div><div class="swatch"><i style="background:var(--primary-700)"></i><div><b>Primary 700</b><code>#213689</code><br><code>--primary-700</code></div></div></div>
+    <p class="ds-sub">Accent</p><div class="swatch-row"><div class="swatch"><i style="background:var(--accent-50)"></i><div><b>Accent 50</b><code>#FDECEB</code><br><code>--accent-50</code></div></div><div class="swatch"><i style="background:var(--accent-500)"></i><div><b>Accent 500</b><code>#E5605A</code><br><code>--accent-500</code></div></div><div class="swatch"><i style="background:var(--accent-700)"></i><div><b>Accent 700</b><code>#B9342E</code><br><code>--accent-700</code></div></div></div>
+    <p class="ds-sub">Neutral</p><div class="swatch-row"><div class="swatch"><i style="background:var(--neutral-0)"></i><div><b>Neutral 0</b><code>#FFFFFF</code><br><code>--neutral-0</code></div></div><div class="swatch"><i style="background:var(--neutral-50)"></i><div><b>Neutral 50</b><code>#F6F7FB</code><br><code>--neutral-50</code></div></div><div class="swatch"><i style="background:var(--neutral-100)"></i><div><b>Neutral 100</b><code>#EDEFF5</code><br><code>--neutral-100</code></div></div><div class="swatch"><i style="background:var(--neutral-200)"></i><div><b>Neutral 200</b><code>#E1E5ED</code><br><code>--neutral-200</code></div></div><div class="swatch"><i style="background:var(--neutral-300)"></i><div><b>Neutral 300</b><code>#C8CEDB</code><br><code>--neutral-300</code></div></div><div class="swatch"><i style="background:var(--neutral-400)"></i><div><b>Neutral 400</b><code>#9AA2B4</code><br><code>--neutral-400</code></div></div><div class="swatch"><i style="background:var(--neutral-500)"></i><div><b>Neutral 500</b><code>#5B6478</code><br><code>--neutral-500</code></div></div><div class="swatch"><i style="background:var(--neutral-700)"></i><div><b>Neutral 700</b><code>#343B4D</code><br><code>--neutral-700</code></div></div><div class="swatch"><i style="background:var(--neutral-900)"></i><div><b>Neutral 900</b><code>#171C2B</code><br><code>--neutral-900</code></div></div><div class="swatch"><i style="background:var(--navy-900)"></i><div><b>Navy 900</b><code>#172033</code><br><code>--navy-900</code></div></div></div>
+    <p class="ds-sub">Semantic</p><div class="swatch-row"><div class="swatch"><i style="background:var(--success)"></i><div><b>Success</b><code>#1E7A33</code><br><code>--success</code></div></div><div class="swatch"><i style="background:var(--success-bg)"></i><div><b>Success bg</b><code>#E6F5EA</code><br><code>--success-bg</code></div></div><div class="swatch"><i style="background:var(--warning)"></i><div><b>Warning</b><code>#8A5A00</code><br><code>--warning</code></div></div><div class="swatch"><i style="background:var(--warning-bg)"></i><div><b>Warning bg</b><code>#FFF4D6</code><br><code>--warning-bg</code></div></div><div class="swatch"><i style="background:var(--info)"></i><div><b>Info</b><code>#1F5A99</code><br><code>--info</code></div></div><div class="swatch"><i style="background:var(--info-bg)"></i><div><b>Info bg</b><code>#E7F1FD</code><br><code>--info-bg</code></div></div><div class="swatch"><i style="background:var(--danger)"></i><div><b>Danger</b><code>#C23B35</code><br><code>--danger</code></div></div><div class="swatch"><i style="background:var(--danger-bg)"></i><div><b>Danger bg</b><code>#FDECEB</code><br><code>--danger-bg</code></div></div></div>
+    <p class="ds-sub">Aturan pemakaian</p>
+    <ul class="rules">
+      <li>Primary 500 hanya untuk aksi utama, tautan aktif, dan fokus. Maksimal satu tombol primary per area.</li>
+      <li>Teks biasa memakai Neutral 900; teks pendukung memakai Neutral 500 (kontras ≥ 4.5:1 pada latar putih).</li>
+      <li>Status selalu berpasangan: teks warna semantik di atas latar <i>bg</i>-nya (mis. Success di atas Success bg).</li>
+    </ul>
+  </section>
+
+  <section class="ds-section" id="tipografi">
+    <h2 class="h2">2. Typography</h2>
+    <p class="lead">Satu keluarga huruf: <b>Plus Jakarta Sans</b> (cadangan: system-ui). Skala 7 tingkat dengan tinggi baris yang sudah ditetapkan.</p>
+    <table class="type-table"><tbody><tr><td><b>Heading 1</b><br><span class="code">.h1 — H1 · 32 / 40 · ExtraBold</span></td><td><p class="sample h1">Selamat datang, Kava</p></td></tr><tr><td><b>Heading 2</b><br><span class="code">.h2 — H2 · 24 / 32 · Bold</span></td><td><p class="sample h2">Mata Kuliah Semester Ini</p></td></tr><tr><td><b>Heading 3</b><br><span class="code">.h3 — H3 · 18 / 26 · Bold</span></td><td><p class="sample h3">Jadwal Hari Ini</p></td></tr><tr><td><b>Heading 4</b><br><span class="code">.h4 — H4 · 16 / 24 · SemiBold</span></td><td><p class="sample h4">Pengisian KRS</p></td></tr><tr><td><b>Body</b><br><span class="code">.body — Body · 15 / 24 · Regular</span></td><td><p class="sample body">Pengisian KRS semester berikutnya dibuka pada 24 Agustus 2026.</p></td></tr><tr><td><b>Small</b><br><span class="code">.small — Small · 13 / 20 · Regular</span></td><td><p class="sample small">Ruang Lab Komputer 1</p></td></tr><tr><td><b>Eyebrow</b><br><span class="code">.eyebrow — Caption · 12 / 16 · Bold · Uppercase</span></td><td><p class="sample eyebrow">Perkuliahan</p></td></tr></tbody></table>
+  </section>
+
+  <section class="ds-section" id="spacing">
+    <h2 class="h2">3. Spacing</h2>
+    <p class="lead">Semua jarak adalah kelipatan 4px. Gunakan token, jangan menulis angka piksel sembarangan.</p>
+    <div class="space-list"><div class="space-row"><b>Space XS</b><span class="code">4px</span><div class="bar" style="width:16px"></div></div><div class="space-row"><b>Space S</b><span class="code">8px</span><div class="bar" style="width:32px"></div></div><div class="space-row"><b>Space M</b><span class="code">16px</span><div class="bar" style="width:64px"></div></div><div class="space-row"><b>Space L</b><span class="code">24px</span><div class="bar" style="width:96px"></div></div><div class="space-row"><b>Space XL</b><span class="code">32px</span><div class="bar" style="width:128px"></div></div><div class="space-row"><b>Space XXL</b><span class="code">48px</span><div class="bar" style="width:192px"></div></div></div>
+    <p class="ds-sub">Radius &amp; shadow</p>
+    <div class="demo-grid">
+      <div class="demo"><b>Radius S / M / L</b><p class="small">8px · 12px · 16px (<span class="code">--radius-s/m/l</span>) — kontrol memakai S, kartu memakai M.</p></div>
+      <div class="demo" style="box-shadow:var(--shadow-m)"><b>Shadow M</b><p class="small"><span class="code">--shadow-m</span> untuk kartu yang menonjol; <span class="code">--shadow-s</span> untuk kartu standar.</p></div>
+    </div>
+  </section>
+
+  <section class="ds-section" id="tombol">
+    <h2 class="h2">4. Buttons</h2>
+    <p class="lead">Empat gaya utama dengan state yang konsisten. Tinggi minimum 44px agar mudah disentuh di ponsel.</p>
+    <div class="demo" style="overflow-x:auto"><div class="btn-matrix"><div></div><div class="col">Default</div><div class="col">Hover</div><div class="col">Focus</div><div class="col">Disabled</div><div class="row">Primary</div><div><button class="btn btn--primary">Default</button></div><div><button class="btn btn--primary is-hover">Hover</button></div><div><button class="btn btn--primary is-focus">Focus</button></div><div><button class="btn btn--primary" disabled>Disabled</button></div><div class="row">Secondary</div><div><button class="btn btn--secondary">Default</button></div><div><button class="btn btn--secondary is-hover">Hover</button></div><div><button class="btn btn--secondary is-focus">Focus</button></div><div><button class="btn btn--secondary" disabled>Disabled</button></div><div class="row">Outline</div><div><button class="btn btn--outline">Default</button></div><div><button class="btn btn--outline is-hover">Hover</button></div><div><button class="btn btn--outline is-focus">Focus</button></div><div><button class="btn btn--outline" disabled>Disabled</button></div><div class="row">Ghost</div><div><button class="btn btn--ghost">Default</button></div><div><button class="btn btn--ghost is-hover">Hover</button></div><div><button class="btn btn--ghost is-focus">Focus</button></div><div><button class="btn btn--ghost" disabled>Disabled</button></div></div></div>
+    <p class="ds-sub">Ukuran &amp; varian lain</p>
+    <div class="demo btn-row">
+      <button class="btn btn--primary btn--sm">Small</button>
+      <button class="btn btn--primary">Medium</button>
+      <button class="btn btn--primary btn--lg">Large</button>
+      <button class="btn btn--primary"><svg class="icon" aria-hidden="true"><use href="#i-award"/></svg>Dengan ikon</button>
+      <button class="btn btn--danger">Hapus</button>
+    </div>
+  </section>
+
+  <section class="ds-section" id="form">
+    <h2 class="h2">5. Form Controls</h2>
+    <p class="lead">Label selalu terlihat di atas kontrol. Error ditandai warna, teks bantuan, dan border — bukan warna saja.</p>
+    <div class="demo demo-grid">
+      <div class="field"><label class="label" for="f1">Nama lengkap</label><input class="input" id="f1" placeholder="Masukkan nama" /><span class="help">State: default</span></div>
+      <div class="field"><label class="label" for="f2">Cari mata kuliah</label><input class="input is-focus" id="f2" value="Desain Web" /><span class="help">State: focus</span></div>
+      <div class="field field--error"><label class="label" for="f3">NPM</label><input class="input" id="f3" value="45252" aria-invalid="true" aria-describedby="f3e" /><span class="help" id="f3e">NPM harus terdiri dari 10 digit.</span></div>
+      <div class="field"><label class="label" for="f4">Dosen PA</label><input class="input" id="f4" value="Tidak dapat diubah" disabled /><span class="help">State: disabled</span></div>
+      <div class="field"><label class="label" for="f5">Semester</label>
+        <select class="select" id="f5"><option>Gasal 2026/2027</option><option>Genap 2026/2027</option></select><span class="help">Select</span></div>
+      <div class="field"><label class="label" for="f6">Pencarian dengan ikon</label>
+        <div class="input-icon"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg><input class="input" id="f6" placeholder="Cari..." /></div><span class="help">Input + ikon</span></div>
+      <div class="field"><span class="label">Checkbox</span>
+        <label class="check check--checkbox"><input type="checkbox" checked /><span class="box"></span><span>Setuju syarat &amp; ketentuan</span></label>
+        <label class="check check--checkbox"><input type="checkbox" /><span class="box"></span><span>Kirim notifikasi email</span></label>
+        <label class="check check--checkbox"><input type="checkbox" disabled /><span class="box"></span><span>Tidak tersedia</span></label></div>
+      <div class="field"><span class="label">Radio button</span>
+        <label class="check check--radio"><input type="radio" name="r" checked /><span class="box"></span><span>Tatap muka</span></label>
+        <label class="check check--radio"><input type="radio" name="r" /><span class="box"></span><span>Daring</span></label>
+        <label class="check check--radio"><input type="radio" name="r" disabled /><span class="box"></span><span>Tidak tersedia</span></label></div>
+    </div>
+  </section>
+
+  <section class="ds-section" id="kartu">
+    <h2 class="h2">6. Cards</h2>
+    <p class="lead">Satu kartu dasar dengan tiga varian: statistik, pengumuman, dan interaktif. Badge status dipakai bersama kartu.</p>
+    <div class="card-grid">
+      <article class="card"><p class="eyebrow">Card dasar</p><h3 class="h3" style="margin-bottom:8px">Judul kartu</h3><p class="small" style="margin:0">Latar putih, border 1px, radius 12px, padding 24px, shadow S.</p></article>
+      <article class="card card--stat card--interactive">
+        <div class="stat-top"><span class="stat-label">Card statistik</span><span class="stat-icon"><svg class="icon" aria-hidden="true"><use href="#i-book"/></svg></span></div>
+        <strong class="stat-value">88</strong><div class="progress"><span style="width:61%"></span></div><span class="stat-note">Naik sedikit saat di-hover</span></article>
+      <article class="card card--notice is-warning"><span class="badge badge--warning">Penting</span><h3 class="h4">Card pengumuman</h3><p>Garis kiri berwarna menandakan tingkat kepentingan.</p></article>
+    </div>
+    <p class="ds-sub">Badge</p>
+    <div class="demo btn-row"><span class="badge badge--success">Success</span><span class="badge badge--warning">Warning</span><span class="badge badge--info">Info</span><span class="badge badge--danger">Danger</span><span class="badge badge--neutral">Neutral</span></div>
+  </section>
+</main>
+</body>
+</html>
