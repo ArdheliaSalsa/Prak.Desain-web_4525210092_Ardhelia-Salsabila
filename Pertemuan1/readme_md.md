@@ -38,7 +38,8 @@ Halaman web ini mengimplementasikan beberapa elemen dasar HTML5:
 
 
 ## Screenshot Run Program
----
+<img width="548" height="598" alt="Screenshot 2026-10-27 122130" src="https://github.com/user-attachments/assets/23df4b63-4d60-43d2-b157-94f2cbc61103" />
+
 
 ## 📜 Lisensi & Hak Cipta
 
