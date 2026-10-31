@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eeeeee;
+}
+
+.box {
+  width: 90%;
+  max-width: 450px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #999;
+}
+
+h1 {
+  text-align: center;
+  font-size: 22px;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="email"], select, textarea {
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 15px;
+  padding: 8px 20px;
+}

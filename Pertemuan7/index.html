@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrasi Event</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="box">
+    <h1>Registrasi Event Seminar</h1>
+
+    <form action="proses.php" method="post" enctype="multipart/form-data">
+
+      <label>Nama Lengkap</label>
+      <input type="text" name="nama" required minlength="3" maxlength="50"
+             pattern="[A-Za-z ]+" title="Nama hanya boleh huruf dan spasi">
+
+      <label>Email</label>
+      <input type="email" name="email" required>
+
+      <label>Jenis Kelamin</label>
+      <input type="radio" name="gender" value="Laki-laki" required> Laki-laki
+      <input type="radio" name="gender" value="Perempuan"> Perempuan
+
+      <label>Pilih Sesi (boleh lebih dari satu)</label>
+      <input type="checkbox" name="sesi[]" value="Pagi"> Sesi Pagi <br>
+      <input type="checkbox" name="sesi[]" value="Siang"> Sesi Siang <br>
+      <input type="checkbox" name="sesi[]" value="Sore"> Sesi Sore
+
+      <label>Asal Program Studi</label>
+      <select name="prodi" required>
+        <option value="">-- Pilih Prodi --</option>
+        <option value="Teknik Informatika">Teknik Informatika</option>
+        <option value="Teknik Mesin">Teknik Mesin</option>
+        <option value="Teknik Elektro">Teknik Elektro</option>
+      </select>
+
+      <label>Alasan Ikut Event</label>
+      <textarea name="alasan" rows="4" required minlength="10" maxlength="200"></textarea>
+
+      <label>Upload Bukti Pembayaran (jpg/png)</label>
+      <input type="file" name="bukti" accept=".jpg,.png" required>
+
+      <button type="submit">Daftar</button>
+    </form>
+  </div>
+</body>
+</html>
