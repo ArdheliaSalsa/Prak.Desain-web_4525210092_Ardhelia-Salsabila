@@ -49,15 +49,15 @@ Catatan: `action="proses.php"` pada form mengarah ke file yang belum dibuat. Jad
 
 ## Test Case Validasi (Skenario Input Salah)
 
-| No | Field | Input uji | Hasil yang diharapkan | Hasil aktual |
+| No | Field | Input uji | Hasil yang diharapkan |
 |---|---|---|---|---|
-| 1 | Nama | (dikosongkan) | Form tidak terkirim, muncul pesan field wajib diisi | (isi setelah diuji) |
-| 2 | Nama | `Budi123` | Form tidak terkirim, muncul pesan "Nama hanya boleh huruf dan spasi" | (isi setelah diuji) |
-| 3 | Email | `budigmail.com` | Form tidak terkirim, muncul pesan email harus memakai `@` | (isi setelah diuji) |
-| 4 | Prodi | Tidak memilih | Form tidak terkirim, muncul pesan agar memilih salah satu item | (isi setelah diuji) |
-| 5 | Alasan | `bagus` | Form tidak terkirim, muncul pesan teks minimal 10 karakter | (isi setelah diuji) |
-| 6 | Jenis kelamin | Tidak memilih | Form tidak terkirim, muncul pesan agar memilih salah satu opsi | (isi setelah diuji) |
-| 7 | Upload | Tidak memilih file | Form tidak terkirim, muncul pesan agar memilih file | (isi setelah diuji) |
+| 1 | Nama | (dikosongkan) | Form tidak terkirim, muncul pesan field wajib diisi |
+| 2 | Nama | `Budi123` | Form tidak terkirim, muncul pesan "Nama hanya boleh huruf dan spasi" |
+| 3 | Email | `budigmail.com` | Form tidak terkirim, muncul pesan email harus memakai `@` |
+| 4 | Prodi | Tidak memilih | Form tidak terkirim, muncul pesan agar memilih salah satu item |
+| 5 | Alasan | `bagus` | Form tidak terkirim, muncul pesan teks minimal 10 karakter |
+| 6 | Jenis kelamin | Tidak memilih | Form tidak terkirim, muncul pesan agar memilih salah satu opsi |
+| 7 | Upload | Tidak memilih file | Form tidak terkirim, muncul pesan agar memilih file |
 
 ## Validasi yang Tetap Wajib di Server
 
