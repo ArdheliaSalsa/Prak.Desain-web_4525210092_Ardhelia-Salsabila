@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Kursus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="box">
+    <h1>Pendaftaran Kursus Barista</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+      <label>Nama Lengkap</label>
+      <input type="text" name="nama" required minlength="3" maxlength="50"
+             pattern="[A-Za-z ]+" title="Nama hanya boleh huruf dan spasi">
+
+      <label>Email</label>
+      <input type="email" name="email" required>
+
+      <label>Nomor HP</label>
+      <input type="text" name="hp" required pattern="08[0-9]{8,11}"
+             title="Nomor HP diawali 08 dan 10-13 digit angka" placeholder="08xxxxxxxxxx">
+
+      <label>Jenis Kelamin</label>
+      <input type="radio" name="gender" value="Laki-laki" required> Laki-laki
+      <input type="radio" name="gender" value="Perempuan"> Perempuan
+
+      <label>Pilih Sesi (boleh lebih dari satu)</label>
+      <input type="checkbox" name="sesi[]" value="Pagi"> Sesi Pagi <br>
+      <input type="checkbox" name="sesi[]" value="Siang"> Sesi Siang <br>
+      <input type="checkbox" name="sesi[]" value="Sore"> Sesi Sore
+
+      <label>Level Kelas</label>
+      <select name="level" required>
+        <option value="">-- Pilih Level --</option>
+        <option value="Dasar">Dasar</option>
+        <option value="Menengah">Menengah</option>
+        <option value="Lanjutan">Lanjutan</option>
+      </select>
+
+      <label>Alasan Ikut Kursus</label>
+      <textarea name="alasan" rows="4" required minlength="10" maxlength="200"></textarea>
+
+      <label>Upload Bukti Pembayaran (jpg/png)</label>
+      <input type="file" name="bukti" accept=".jpg,.jpeg,.png" required>
+
+      <!-- 3 jenis button: submit, reset, button -->
+      <button type="submit">Daftar</button>
+      <button type="reset">Reset</button>
+      <button type="button">Batal</button>
+    </form>
+  </div>
+</body>
+</html>

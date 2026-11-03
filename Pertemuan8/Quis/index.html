@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Voluntir - Bakti Masyarakat & Gerakan Peduli Lingkungan</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Daftar Lia Volunteer</h1>
+    <p class="subjudul">Bakti Masyarakat &amp; Gerakan Peduli Lingkungan</p>
+
+    <form action="#" method="post">
+
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+
+      <label for="telepon">Nomor Telepon</label>
+      <input type="tel" id="telepon" name="telepon" placeholder="Contoh: 08123456789" required>
+
+      <label for="wilayah">Kategori Domisili / Wilayah</label>
+      <select id="wilayah" name="wilayah" required>
+        <option value="">-- Pilih wilayah --</option>
+        <option value="jakarta-pusat">Jakarta Pusat</option>
+        <option value="jakarta-utara">Jakarta Utara</option>
+        <option value="jakarta-barat">Jakarta Barat</option>
+        <option value="jakarta-selatan">Jakarta Selatan</option>
+        <option value="jakarta-timur">Jakarta Timur</option>
+        <option value="luar-jakarta">Luar Jakarta</option>
+      </select>
+
+      <label>Pilihan Divisi Relawan</label>
+      <label class="pilihan">
+        <input type="radio" name="divisi" value="P3K" required> P3K
+      </label>
+      <label class="pilihan">
+        <input type="radio" name="divisi" value="Pengajaran"> Pengajaran
+      </label>
+      <label class="pilihan">
+        <input type="radio" name="divisi" value="PDD"> PDD
+      </label>
+
+      <label>Keahlian / Minat Khusus</label>
+      <label class="pilihan">
+        <input type="checkbox" name="keahlian" value="dokumentasi"> Dokumentasi
+      </label>
+      <label class="pilihan">
+        <input type="checkbox" name="keahlian" value="pertolongan-pertama"> Pertolongan Pertama
+      </label>
+      <label class="pilihan">
+        <input type="checkbox" name="keahlian" value="mengajar"> Mengajar
+      </label>
+      <label class="pilihan">
+      </label>
+
+      <label for="motivasi">Motivasi Bergabung</label>
+      <textarea id="motivasi" name="motivasi" minlength="20" placeholder="alasan kamu ingin bergabung..." required></textarea>
+      <p class="catatan">Minimal 20 karakter.</p>
+
+      <label class="pilihan">
+        <input type="checkbox" name="komitmen" required>
+        Saya bersedia berkomitmen mengikuti kegiatan sampai selesai.
+      </label>
+
+      <button type="submit">Daftar Sekarang</button>
+
+    </form>
+  </div>
+</body>
+</html>
