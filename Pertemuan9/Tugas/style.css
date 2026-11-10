@@ -1,0 +1,17 @@
+/* CSS buatan sendiri (dipanggil setelah Bootstrap) */
+
+.angka {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.card {
+  border: none;
+}
+
+/* Sedikit efek saat kartu disentuh kursor */
+.card:hover {
+  transform: translateY(-3px);
+  transition: 0.2s;
+}
