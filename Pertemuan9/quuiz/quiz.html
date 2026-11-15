@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Relawan</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. HEADER -->
+    <header class="header-saya text-white text-center py-5 shadow-sm">
+    <div class="container">
+        <h1 class="fw-bold">Bakti Masyarakat &amp; Gerakan Peduli Lingkungan</h1>
+        <p class="mb-0 text-light">Dashboard Relawan - pantau data relawan aksi sosial kita di sini</p>
+    </div>
+    </header>
+
+    <main class="container my-4">
+
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card kartu-statistik shadow-sm text-center">
+                    <div class="card-body">
+                        <h5 class="card-title text-secondary">Total Relawan</h5>
+                        <p class="angka mb-0">128</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card kartu-statistik shadow-sm text-center">
+                    <div class="card-body">
+                        <h5 class="card-title text-secondary">Relawan Aktif</h5>
+                        <p class="angka mb-0">96</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card kartu-statistik shadow-sm text-center">
+                    <div class="card-body">
+                        <h5 class="card-title text-secondary">Kegiatan Terlaksana</h5>
+                        <p class="angka mb-0">24</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card kartu-statistik shadow-sm text-center">
+                    <div class="card-body">
+                        <h5 class="card-title text-secondary">Wilayah Terjangkau</h5>
+                        <p class="angka mb-0">15</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. TOMBOL TAMBAH RELAWAN + JUDUL TABEL -->
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 class="mb-0">Data Relawan</h4>
+            <button type="button" class="btn btn-primary">+ Tambah Relawan</button>
+        </div>
+
+        <!-- 4. TABEL DATA RELAWAN -->
+        <!-- table-responsive: tabel bisa digeser ke samping di layar kecil -->
+        <div class="table-responsive bg-white shadow-sm rounded">
+            <!-- table-striped: warna baris selang-seling, table-hover: baris menyala saat disorot -->
+            <table class="table table-striped table-hover align-middle mb-0">
+                <thead class="table-primary text-white">
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Domisili</th>
+                        <th>Divisi</th>
+                        <th>Status</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Budi Santoso</td>
+                        <td>Jakarta Selatan</td>
+                        <td>Bersih Sungai</td>
+                        <td><span class="badge text-bg-success">Aktif</span></td>
+                        <td><button class="btn btn-sm btn-primary">Detail</button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Siti Aisyah</td>
+                        <td>Depok</td>
+                        <td>Tanam Pohon</td>
+                        <td><span class="badge text-bg-success">Aktif</span></td>
+                        <td><button class="btn btn-sm btn-primary">Detail</button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Rizky Pratama</td>
+                        <td>Bekasi</td>
+                        <td>Bank Sampah</td>
+                        <td><span class="badge text-bg-warning">Menunggu</span></td>
+                        <td><button class="btn btn-sm btn-primary">Detail</button></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Dewi Lestari</td>
+                        <td>Tangerang</td>
+                        <td>Edukasi Warga</td>
+                        <td><span class="badge text-bg-success">Aktif</span></td>
+                        <td><button class="btn btn-sm btn-primary">Detail</button></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Ahmad Fauzi</td>
+                        <td>Bogor</td>
+                        <td>Tanam Pohon</td>
+                        <td><span class="badge text-bg-secondary">Nonaktif</span></td>
+                        <td><button class="btn btn-sm btn-primary">Detail</button></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Nabila Putri</td>
+                        <td>Jakarta Timur</td>
+                        <td>Dokumentasi</td>
+                        <td><span class="badge text-bg-warning">Menunggu</span></td>
+                        <td><button class="btn btn-sm btn-primary">Detail</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <!-- 7. FOOTER -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2026 Bakti Masyarakat &amp; Gerakan Peduli Lingkungan</p>
+    </footer>
+
+</body>
+</html>
