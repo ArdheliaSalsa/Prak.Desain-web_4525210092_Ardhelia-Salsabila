@@ -1,0 +1,140 @@
+/* ===== Stylesheet custom Selaras Coffee =====
+   Warna branding:
+   - coklat kopi : #4a2f23
+   - hijau daun  : #5b7b5a
+   - krem        : #f6efe6
+   - oranye      : #d98a3d
+*/
+
+:root {
+  --coklat: #4a2f23;
+  --hijau: #5b7b5a;
+  --krem: #f6efe6;
+  --oranye: #d98a3d;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: var(--krem);
+  color: var(--coklat);
+}
+
+/* Navbar */
+.navbar-selaras {
+  background-color: var(--coklat);
+}
+.navbar-selaras .navbar-brand {
+  color: var(--krem);
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.navbar-selaras .nav-link {
+  color: var(--krem);
+}
+.navbar-selaras .nav-link:hover {
+  color: var(--oranye);
+}
+.navbar-selaras .navbar-toggler {
+  border-color: var(--krem);
+}
+.navbar-selaras .navbar-toggler-icon {
+  filter: invert(1); /* ikon hamburger jadi putih */
+}
+
+/* Hero */
+.hero {
+  min-height: 90vh;
+  padding-top: 80px; /* supaya tidak tertutup navbar yang fixed */
+  background-color: var(--hijau);
+  background-image: linear-gradient(rgba(74, 47, 35, 0.75), rgba(74, 47, 35, 0.75));
+  color: white;
+}
+.hero-judul {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.hero-teks {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Tombol branding (menimpa warna btn bawaan Bootstrap) */
+.btn-tombol {
+  background-color: var(--oranye);
+  border-color: var(--oranye);
+  color: white;
+  font-weight: 600;
+}
+.btn-tombol:hover {
+  background-color: #b9722e;
+  border-color: #b9722e;
+  color: white;
+}
+
+/* Alert promo */
+.alert-promo {
+  background-color: #fff3dc;
+  border: 1px solid var(--oranye);
+  color: var(--coklat);
+}
+
+/* Judul bagian */
+.judul-bagian {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Card produk */
+.card-produk {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.gambar-produk {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.gambar-1 { background-color: #e8c9a5; }
+.gambar-2 { background-color: #c9d6c3; }
+.gambar-3 { background-color: #f0d9c9; }
+.harga {
+  color: var(--hijau);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+/* Bagian kontak */
+.bagian-kontak {
+  background-color: #ebe0d2;
+}
+.bagian-kontak .form-control:focus {
+  border-color: var(--hijau);
+  box-shadow: 0 0 0 0.2rem rgba(91, 123, 90, 0.3);
+}
+
+/* Footer */
+.footer-selaras {
+  background-color: var(--coklat);
+  color: var(--krem);
+}
+
+/* ===== Responsive =====
+   HP        : kurang dari 768px (default, 1 kolom)
+   Tablet    : 768px ke atas
+   Laptop    : 992px ke atas
+*/
+@media (min-width: 768px) {
+  .hero-judul {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-judul {
+    font-size: 3.5rem;
+  }
+}
